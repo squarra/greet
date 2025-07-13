@@ -1,0 +1,1 @@
+Minimal working cpp project with static/shared libs, an executable wrapped in a nix flake. 
