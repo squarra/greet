@@ -8,7 +8,7 @@ set_target_properties(greet_shared PROPERTIES OUTPUT_NAME greet)
 set_target_properties(greet_static PROPERTIES OUTPUT_NAME greet)
 
 add_executable(greeter src/main.cpp)
-target_link_libraries(greeter PRIVATE greet)
+target_link_libraries(greeter PRIVATE greet_shared)
 
 install(TARGETS greeter DESTINATION bin)
 install(TARGETS greet_shared greet_static DESTINATION lib)
